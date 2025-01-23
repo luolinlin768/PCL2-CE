@@ -97,6 +97,7 @@
             CheckHiddenPageLink.Checked = Setup.Get("UiHiddenPageLink")
             CheckHiddenPageSetup.Checked = Setup.Get("UiHiddenPageSetup")
             CheckHiddenPageOther.Checked = Setup.Get("UiHiddenPageOther")
+            CheckHiddenPageOther.Checked = Setup.Get("UiHiddenPageLogs")
             CheckHiddenFunctionSelect.Checked = Setup.Get("UiHiddenFunctionSelect")
             CheckHiddenFunctionModUpdate.Checked = Setup.Get("UiHiddenFunctionModUpdate")
             CheckHiddenFunctionHidden.Checked = Setup.Get("UiHiddenFunctionHidden")
@@ -148,6 +149,7 @@
             Setup.Reset("UiHiddenPageLink")
             Setup.Reset("UiHiddenPageSetup")
             Setup.Reset("UiHiddenPageOther")
+            Setup.Reset("UiHiddenPageLogs")
             Setup.Reset("UiHiddenFunctionSelect")
             Setup.Reset("UiHiddenFunctionModUpdate")
             Setup.Reset("UiHiddenFunctionHidden")
@@ -522,6 +524,7 @@ Refresh:
                 FrmMain.BtnTitleSelect2.Visibility = If(Debugger.IsAttached, Visibility.Visible, Visibility.Collapsed) 'If(Not HiddenForceShow AndAlso Setup.Get("UiHiddenPageLink"), Visibility.Collapsed, Visibility.Visible)
                 FrmMain.BtnTitleSelect3.Visibility = If(Not HiddenForceShow AndAlso Setup.Get("UiHiddenPageSetup"), Visibility.Collapsed, Visibility.Visible)
                 FrmMain.BtnTitleSelect4.Visibility = If(Not HiddenForceShow AndAlso Setup.Get("UiHiddenPageOther"), Visibility.Collapsed, Visibility.Visible)
+                FrmMain.BtnTitleSelect5.Visibility = If(Not HiddenForceShow AndAlso Setup.Get("UiHiddenPageLogs"), Visibility.Collapsed, Visibility.Visible)
             End If
             '功能
             FrmLaunchLeft.RefreshButtonsUI()

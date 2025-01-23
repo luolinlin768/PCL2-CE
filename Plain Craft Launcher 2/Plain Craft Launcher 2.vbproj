@@ -327,6 +327,9 @@
     <Compile Include="Pages\PageLink\PageLinkLobby.xaml.vb">
       <DependentUpon>PageLinkLobby.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\PageLogs\PageLogsLeft.xaml.vb">
+      <DependentUpon>PageLogsLeft.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PageOther\PageOtherVote.xaml.vb">
       <DependentUpon>PageOtherVote.xaml</DependentUpon>
     </Compile>
@@ -632,6 +635,10 @@
     <Page Include="Pages\PageLink\PageLinkLobby.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\PageLogs\PageLogsLeft.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\PageOther\PageOtherVote.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -1048,5 +1055,6 @@
       <Version>6.0.1</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
